@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Zazou Café - Contact</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="gradient-bg">
+  <div class="page-fade">
+    <nav class="nav glass">
+  <a class="brand" href="index.html">
+    <img src="ZazouCafe.jpg" alt="Zazou Café" width="48" height="48">
+  </a>
+
+  <div class="nav-links">
+    <a class="nav-link ripple active" href="index.html">Accueil</a>
+    <a class="nav-link ripple" href="contact.html">Nous contacter</a>
+    <a class="nav-link ripple" href="discord.html">Discord</a>
+    <a class="nav-link ripple" href="candidature.html">Candidature</a>
+  </div>
+</nav>
+
+
+    <section class="content">
+      <div class="card glass hover-lift">
+        <h2>Nous contacter</h2>
+        <p>Besoin d’aide ou envie de proposer une idée ? Écris-nous directement.</p>
+
+        <!-- Formulaire connecté à Formspree via fetch (remplace TON_ID) -->
+        <form id="contactForm" class="form" action="https://formspree.io/f/xpwklqjo" method="POST">
+          <div class="form-row">
+            <input type="text" id="name" name="name" placeholder="Votre nom" required class="input"/>
+            <input type="email" id="email" name="email" placeholder="Votre email" required class="input"/>
+          </div>
+          <textarea id="message" name="message" placeholder="Votre message" required class="textarea"></textarea>
+
+          <button type="submit" class="btn ripple">Envoyer</button>
+          <p id="formResponse" class="form-response" aria-live="polite"></p>
+        </form>
+
+        <p class="hint">
+          Astuce: si tu veux tester vite, mets ton endpoint Formspree dans l'attribut action ci-dessus.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer glass">
+      <p>© 2025 Zazou Café - Roblox</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
